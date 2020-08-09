@@ -54,5 +54,25 @@ public class Main {
             case 5:
                 System.out.println("うーん。。。");
         }
+
+        // 基本的なfor文
+        for (int i = 0; i < 10; i++){
+            System.out.println("こんにちは");
+        }
+
+        // ループ変数の内容を表示
+        for (int n = 0; n < 3; n++) {
+            System.out.print("現在" + (n + 1) + "周目→");
+            System.out.println("");
+        }
+
+        // 九九の出力
+        for (int f = 1; f < 10; f++) {
+            for (int j = 1; j < 10; j++) {
+                System.out.print(f * j);
+                System.out.print("　");
+            }
+            System.out.println(" ");
+        }
     }
 }
