@@ -38,5 +38,30 @@ public class Main {
         for (int value : scores) {
             System.out.println(value);
         }
+
+        // nullの利用(エラーになる)
+
+        // int[] array = {1, 2, 3};
+        // array = null;
+        // array[0] = 10;
+
+        // 二次元配列の利用
+        System.out.println("--------------");
+        int[][] scores1 = new int[2][3];
+        scores1[0][0] = 40;
+        scores1[0][1] = 50;
+        scores1[0][2] = 60;
+        scores1[1][0] = 80;
+        scores1[1][1] = 70;
+        scores1[1][2] = 60;
+        System.out.println(scores1[1][1]);
+        System.out.println("--------------");
+
+
+        // 親配列と子配列
+        int[][] scores2 = {{40, 50, 60}, {80, 60, 70}};
+        System.out.println(scores2.length);
+        System.out.println(scores2[0].length);
+
     }
 }
