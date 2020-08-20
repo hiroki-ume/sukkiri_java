@@ -9,6 +9,14 @@ public class Practice {
         System.out.println("-----------------");
 
         email("saaya@gmail", "またあとで");
+
+        System.out.println("-----------------");
+
+        double triangleArea = calcTriangleArea(4.1, 3.1);
+        double circleArea = calcCircleArea(5.0);
+
+        System.out.println("三角形の面積は" + triangleArea);
+        System.out.println("円の面積は" + circleArea);
     }
 
     // 5-1
@@ -36,6 +44,15 @@ public class Practice {
         System.out.println(address + "に以下のメールを送信しました");
         System.out.println("件名：無題");
         System.out.println("本文：" + text);
+    }
+    // 5-4
+    public static double calcTriangleArea(double bottom, double height) {
+        double area = bottom * height / 2;
+        return area;
+    }
+    public static double calcCircleArea(double radius) {
+        double area = radius * radius * 3.14;
+        return area;
     }
 
 }
